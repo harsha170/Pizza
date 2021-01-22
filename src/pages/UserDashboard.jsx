@@ -57,9 +57,7 @@ const addToCart = (event,id) => {
     }else {
         localStorage.setItem('cartItems', `${id}`);
     }
-    //console.log(existingItems, 'existingItems', typeof existingItems);
-    
-
+    //console.log(existingItems, 'existingItems', typeof existing)
 }
 
 

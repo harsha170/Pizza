@@ -8,6 +8,7 @@ import Login from "./pages/LoginPage";
 import Register from "./pages/Registration";
 import Dashboard from "./pages/UserDashboard";
 import Cart from "./pages/Cart"
+import AdminLoginPage from "./pages/AdminLoginPage"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/registration" component={Register}/>
           <Route path="/dashboard" component={Dashboard}/>
           <Route path="/cart" component={Cart}/>
+          <Route path="admin-login" componenet={AdminLoginPage}/>
         </Switch>
       </div>
     </Router>

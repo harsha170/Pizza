@@ -12,6 +12,33 @@ code {
     monospace;
 }
 
+div.dominos:hover, div.dominos:active{
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .header{
   background-color: rgb(0, 140, 255);
   display: flex;
@@ -23,13 +50,14 @@ code {
   font-size: 25px;
   font-weight: 35px;
   padding : 15px;
+  
 }
 .text-right{
   text-align: right;
 }
 .margin-vertical-sm{
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .pizzaName{
   font-size: 20px;
@@ -64,3 +92,17 @@ code {
   margin-top: 7px;
   margin-bottom: 7px;
 }
+
+.cartImg{
+  text-align: center;
+}
+
+.login{
+  font-size: 21px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .dltbtn{
+  height: 5px;
+  width: 25px;
+} */
