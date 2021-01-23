@@ -39,11 +39,13 @@ const Registration = ()=>{
           }).then(response => {
               if(response.data && response.data.message === "User registered"){
                   alert("user registered")
+                  setLoader(false)
                 history.push("/");
               }
             console.log(response,"response");
           }).catch(err => {
-              //alert("login unsuccessful")
+            setLoader(false)
+            //   alert("registration unsuccessful")
               console.log(err, 'err');
           })
       

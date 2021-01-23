@@ -50,6 +50,7 @@ const Login = ()=>{
               }
             console.log(response,"response");
           }).catch(err => {
+            setLoader(false)
               alert("login unsuccessful")
               console.log(err, 'err');
           })
